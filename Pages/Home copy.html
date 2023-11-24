@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG | Department of Computer Science - Home</title>
+    <style>
+        body {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            margin-top: 1%;
+        }
+
+        nav li {
+            margin-left: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 59.25%;
+        }
+
+        .slideshow video {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 87%;
+        }
+
+        .slideshow-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <header>
+            <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
+            <nav>
+                <li class="page">Home</li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </nav>
+        </header>
+
+        <div class="slideshow">
+            <video width="100%" height="auto" muted loop>
+                <source src="C:\Users\user\Desktop\DCIT 205 Interim Assesment\Images\video-bg (1).mp4" type="video/mp4">
+            </video>
+            <div class="slideshow-text">
+                <h1 class="ss-text">YOUR GATEWAY TO WORLD CLASS <br>COMPUTER SCIENCE EDUCATION</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

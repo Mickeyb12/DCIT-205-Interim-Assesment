@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG | Department of Computer Science - Home</title>
+    <style>
+        body {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            margin-top: 1%;
+        }
+
+        nav li {
+            margin-left: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 59.25%;
+        }
+
+        .slideshow video {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 87%;
+        }
+
+        .slideshow-text {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .categories{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 7%;
+        }
+        .box{
+            width: 25%;
+            height: 100px;
+            margin-left: 5%;
+        }
+/* 
+        .courses{
+            
+        }
+        .uprog{
+            
+        }
+        .mprog{
+           
+        }
+        .phdprog{
+
+        } */
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2em 0;
+            margin-top: 30%;
+            width: 100%;
+        }
+
+        .footer-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-section a:hover {
+            color: #66ccff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="body">
+        <header>
+            <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
+            <nav>
+                <li class="page">Home</li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </nav>
+        </header>
+
+        <div class="slideshow">
+            <video width="100%" height="auto" autoplay muted loop>
+                <source src="C:\Users\user\Desktop\DCIT 205 Interim Assesment\Images\video-bg (1).mp4" type="video/mp4">
+            </video>
+            <div class="slideshow-text">
+                <h1 class="ss-text">YOUR GATEWAY TO WORLD CLASS <br>COMPUTER SCIENCE EDUCATION</h1>
+            </div>
+        </div>
+
+        <div class="categories">
+            <div class="box courses">
+                <div>
+                    <h1 class="top" style="text-align: center;">Courses</h1>
+                    <p style="text-align: center;">Our eight week intensive certificate course is open to senior high school graduates, tertiary students, school graduates, workers and the general public.</p>
+                    <b style="text-align: center;"><br><br>Read More</b>
+                </div>
+            </div>
+            <div class="box uprog">
+                <div>
+                    <h1 class="top" style="text-align: center;">Undergraduate Programs</h1>
+                    <p style="text-align: center;">Open the door to sought-after technology careers with a world-class Bachelor of Science in Computer Science degree.</p>
+                    <b style="text-align: center;"><br><br>Read More</b>
+                </div>
+            </div>
+            <div class="box mprog">
+                <div>
+                    <h1 class="top" style="text-align: center;">MPhil and Msc Programs</h1>
+                    <p style="text-align: center;">Embrace world class gradate education with unique blend of cutting-edge research and industry experience.</p>
+                    <b style="text-align: center;">Read More</b>
+                </div>
+            </div>
+            <div class="box phdprog">
+                <div>
+                    <h1 class="top" style="text-align: center;">PhD Programs</h1>
+                    <p style="text-align: center;">Our PHDs lead the effort to extend the boundaries of knowledge through quality and industry relevant research.</p>
+                    <b style="text-align: center;"><br>Read More</b>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer-menu">
+                    <div class="footer-section">
+                        <h3>Academics</h3>
+                        <ul>
+                            <li><a href="#">Undergraduate Courses</a></li>
+                            <li><a href="#">Graduate Courses (MPhil Computer Science)</a></li>
+                            <li><a href="#">Graduate Courses (MSc Computer Science)</a></li>
+                            <li><a href="#">Graduate Courses (PhD)</a></li>
+                            <li><a href="#">Academic Calendar</a></li>
+                            <li><a href="#">Level 200 & 300 Timetable</a></li>
+                            <li><a href="#">Placements for Level 200 Students</a></li>
+                            <li><a href="#">Student Complaint Form</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Admissions</h3>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Graduate</a></li>
+                            <li><a href="#">International Students</a></li>
+                            <li><a href="#">Entry Requirements</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Research</h3>
+                        <ul>
+                            <li><a href="#">Research at DCS</a></li>
+                            <li><a href="#">Research Impact</a></li>
+                            <li><a href="#">Libraries</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>About The Department</h3>
+                        <ul>
+                            <li><a href="#">Introducing DCS</a></li>
+                            <li><a href="#">Head of Department's office</a></li>
+                            <li><a href="#">Faculty</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Phone & Email<br>
+                            +233 501 382 035<br>
+                            +233 559 145 698<br>
+                            <a href="mailto:dcs@ug.edu.gh">dcs@ug.edu.gh</a>
+                        </p>
+                        <p>Location<br>
+                            University Of Ghana, Legon Campus<br>
+                            Opposite Mathematics Department
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>
+
+    </div>
+</body>
+</html>
