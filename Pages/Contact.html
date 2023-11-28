@@ -1,54 +1,279 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>
-        UG | Department of Computer Science - Contact
-    </title>
-    <style>
-        .header{
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    UG | Department of Computer Science - Contact Us
+  </title>
+  <style>
+      body {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
-            margin-left: 90px;
-            margin-right: 100px;
-        }
-        .logo{
-            width: 300px;
-            height: auto;
-        }
-        ul{
-            display: flex;
-            list-style: none;
-        }
-        li{
-            margin-left: 10px;
         }
         a{
             text-decoration: none;
         }
-    </style>
+
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            margin-top: 1%;
+        }
+
+        nav li {
+            margin-left: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+    
+    .contact-us{
+        font-family: 'Arial',sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    address {
+      margin-top: 20px;
+      font-style: normal;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+    footer {
+            position: absolute;
+            top: 80%;
+            background-color: #333;
+            color: #fff;
+            padding: 2em 30;
+            margin-top: 30%;
+            width: 100%;
+        }
+
+        .footer-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3em;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-section a:hover {
+            color: #66ccff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
-        <ul>
-            <li>Contact</li>
-            <li>
-                <a href="Home.html">Home</a>
-            </li>
-            <li>
-                <a href="About.html">About</a>
-            </li>
-            <li>
-                <a href="Resources.html">Resources</a>
-            </li>
-            <li>
-                <a href="Event.html">Event</a>
-            </li>
-            <li>
-                <a href="Catalog.html">Catalog</a>
-            </li>
-        </ul>
+    <div class="body">
+        <header>
+            <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
+            <nav>
+                <li class="page">Contact</li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Catalog.html">Catalog</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="Home.html">Home</a></li>
+            </nav>
+        </header>
+      <div class="contact-us">
+        <p>
+            Contact Us
+        </p> 
+      </div> 
+
+  
+  <section>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <address>
+      <h2>Our Location</h2>
+      <p>University Of Ghana, University Of Ghana,<br>
+      Opposite Mathematics Department</p>
+    </address>
+   
+   
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Email: <a href="mailto:dcs@ug.edu.gh">dcs@ug.edu.gh</a></p>
+      <p>Phone: +233 501 382 035<br>
+       </p>
+    
+  </section>
+
+  <script>
+    function submitForm() {
+      // You can add logic here to handle form submission, e.g., AJAX request
+      alert('Form submitted!');
+    }
+  </script>
+ <footer>
+    <div class="container">
+        <div class="footer-menu">
+            <div class="footer-section">
+                <h3>Academics</h3>
+                <ul>
+                    <li><a href="#">Undergraduate Courses</a></li>
+                    <li><a href="#">Graduate Courses (MPhil Computer Science)</a></li>
+                    <li><a href="#">Graduate Courses (MSc Computer Science)</a></li>
+                    <li><a href="#">Graduate Courses (PhD)</a></li>
+                    <li><a href="#">Academic Calendar</a></li>
+                    <li><a href="#">Level 200 & 300 Timetable</a></li>
+                    <li><a href="#">Placements for Level 200 Students</a></li>
+                    <li><a href="#">Student Complaint Form</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Admissions</h3>
+                <ul>
+                    <li><a href="#">Undergraduate</a></li>
+                    <li><a href="#">Graduate</a></li>
+                    <li><a href="#">International Students</a></li>
+                    <li><a href="#">Entry Requirements</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Research</h3>
+                <ul>
+                    <li><a href="#">Research at DCS</a></li>
+                    <li><a href="#">Research Impact</a></li>
+                    <li><a href="#">Libraries</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About The Department</h3>
+                <ul>
+                    <li><a href="#">Introducing DCS</a></li>
+                    <li><a href="#">Head of Department's office</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Phone & Email<br>
+                    +233 501 382 035<br>
+                    +233 559 145 698<br>
+                    <a href="mailto:dcs@ug.edu.gh">dcs@ug.edu.gh</a>
+                </p>
+                <p>Location<br>
+                    University Of Ghana,<br>
+                    Legon Campus<br>
+                    Opposite Mathematics<br>
+                     Department
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 All rights reserved</p>
+        </div>
     </div>
-
-
+</footer>
 </body>
+</html>

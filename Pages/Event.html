@@ -1,52 +1,316 @@
 <!DOCTYPE html>
 <head>
     <title>
-        UG | Department of Computer Science - Event
+        UG | Department of Computer Science - About
     </title>
     <style>
-        .header{
+         body {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
-            margin-left: 90px;
-            margin-right: 100px;
-        }
-        .logo{
-            width: 300px;
-            height: auto;
-        }
-        ul{
-            display: flex;
-            list-style: none;
-        }
-        li{
-            margin-left: 10px;
         }
         a{
             text-decoration: none;
         }
+
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            margin-top: 1%;
+        }
+
+        nav li {
+            margin-left: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .w{
+            position: absolute;
+            top: 100px;
+            width: 88%;
+
+        }
+        .welcome{
+            font-weight: bold;
+            text-align: center;
+            color: rgb(8, 1, 43);
+            font-size: 50px;
+            font-family: arial;
+            margin-top: 1px;
+            margin-bottom: 1px;
+           
+
+        }
+       .masters{
+            display: flex;
+
+        }
+        .masters-img{
+            position: absolute;
+            height: 300%;
+            width:80%;
+            left: 11%
+        }
+        .k{
+            position: absolute;
+            top: 750px;
+            left: 20px;
+        }
+        .ceremony-text{
+            text-align: justify;
+            font-size: 50px;;
+            margin-left:100px;
+            font-family: Arial;
+            font-size: 25px;
+            color: black
+    
+        }
+        
+        .registration{
+            display: flex;
+            justify-content: space-between;
+        }
+        .reg{
+            position: absolute;
+            top: 120%;
+            left: 10%;
+            font-size: 60px;
+            font-family: Arial;
+            color: black;
+        }
+        
+
+        .registration-text{
+            position: absolute;
+            top: 140%;
+            left:10%;
+            font-family: Arial;
+            font-size: 25px;
+            color: black
+         }
+         .future{
+            display: flex;
+            justify-content: space-between;
+        }
+        .future-cem{
+            position: absolute;
+            top: 160%;
+            left: 10%;
+            font-size: 60px;
+            font-family: Arial;
+            color: black;
+        }
+        
+
+        .future-cem-text{
+            position: absolute;
+            top: 180%;
+            left:10%;
+            font-family: Arial;
+            font-size: 25px;
+            color: black
+        }
+
+      
+         
+         footer {
+            position: absolute;
+            top: 140%;
+            background-color: #333;
+            color: #fff;
+            padding: 2em 30;
+            margin-top: 30%;
+            width: 100%;
+        }
+
+        .footer-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3em;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-section a:hover {
+            color: #66ccff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
-        <ul>
-            <li>Event</li>
-            <li>
-                <a href="Home.html">Home</a>
-            </li>
-            <li>
-                <a href="About.html">About</a>
-            </li>
-            <li>
-                <a href="Resources.html">Resources</a>
-            </li>
-            <li>
-                <a href="Catalog.html">Catalog</a>
-            </li>
-            <li>
-                <a href="Contact.html">Contact</a>
-            </li>
-        </ul>
+    <div class="body">
+        <header>
+            <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
+            <nav>
+                <li class="page">Event</li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Catalog.html">Catalog</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </nav>
+        </header>
+
+       
+
+        <div class="w">
+            <div class="welcome">
+                <p>Master's Graduation Ceremony</p>
+            </div>
+
+            <div class="masters">
+               <img src="../Images/graduation pics.jpg" class="masters-img">
+            </div>
+        </div>
+
+        <div class="k">
+            
+            <div class="ceremony-text">
+                <p>The next graduation ceremony of the Department of Computer Science will take place on 22 March 2024.</p>
+            </div>
+        </div>
+        
+        <div class="registration">
+           <div>
+           <p class="reg">
+            Registration
+           </p>
+           </div> 
+           <div class="registration-text">
+            <p> 
+                In order to take part in the 22 March 2024 Master’s graduation ceremony, students must<br>
+                 submit a signed degree request comprising all credits requirements according to the<br>
+                 respective regulations to the studies administration office by 5 January 2024. A personal<br>
+                 invitation will be sent out.
+            </p>
+
+           </div>
+        </div>
+    <div class="future">
+           <div>
+           <p class="future-cem">
+            Future Ceremonies
+           </p>
+           </div> 
+           <div class="future-cem-text">
+            <p> 
+                The subsequent ceremony will take place on 25 October 2024. Invitations will be sent out<br>
+                in due time.
+            </p>
+
+           </div>
+        </div>
+         </div>
+          
+         <footer>
+            <div class="container">
+                <div class="footer-menu">
+                    <div class="footer-section">
+                        <h3>Academics</h3>
+                        <ul>
+                            <li><a href="#">Undergraduate Courses</a></li>
+                            <li><a href="#">Graduate Courses (MPhil Computer Science)</a></li>
+                            <li><a href="#">Graduate Courses (MSc Computer Science)</a></li>
+                            <li><a href="#">Graduate Courses (PhD)</a></li>
+                            <li><a href="#">Academic Calendar</a></li>
+                            <li><a href="#">Level 200 & 300 Timetable</a></li>
+                            <li><a href="#">Placements for Level 200 Students</a></li>
+                            <li><a href="#">Student Complaint Form</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Admissions</h3>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Graduate</a></li>
+                            <li><a href="#">International Students</a></li>
+                            <li><a href="#">Entry Requirements</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Research</h3>
+                        <ul>
+                            <li><a href="#">Research at DCS</a></li>
+                            <li><a href="#">Research Impact</a></li>
+                            <li><a href="#">Libraries</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>About The Department</h3>
+                        <ul>
+                            <li><a href="#">Introducing DCS</a></li>
+                            <li><a href="#">Head of Department's office</a></li>
+                            <li><a href="#">Faculty</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Phone & Email<br>
+                            +233 501 382 035<br>
+                            +233 559 145 698<br>
+                            <a href="mailto:dcs@ug.edu.gh">dcs@ug.edu.gh</a>
+                        </p>
+                        <p>Location<br>
+                            University Of Ghana, Legon Campus<br>
+                            Opposite Mathematics Department
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
+        
 </body>

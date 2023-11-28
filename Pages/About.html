@@ -4,30 +4,67 @@
         UG | Department of Computer Science - About
     </title>
     <style>
-         .header{
+         body {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
-            margin-left: 90px;
-            margin-right: 100px;
-        }
-        .logo{
-            width: 300px;
-            height: auto;
-        }
-        ul{
-            display: flex;
-            list-style: none;
-        }
-        li{
-            margin-left: 10px;
         }
         a{
             text-decoration: none;
         }
+
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            margin-top: 1%;
+        }
+
+        nav li {
+            margin-left: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding-bottom:15%;
+        }
+
+        .slideshow .img {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 200%;
+        }
+
+        .slideshow-text {
+            position: absolute;
+            top: 115%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
        .aboutus{
             position: relative;}
-        .aboutus img{
+        .aboutus .img{
             width: 1050px;
             height: 10;
             margin-top: 30px;
@@ -35,15 +72,11 @@
             margin-left: auto;
             margin-right: auto;
         }
-        .aboutus-text{
+        .w{
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
+            top: 500px;
+            width: 88%;
+
         }
         .welcome{
             font-weight: bold;
@@ -63,42 +96,174 @@
             font-family: Arial;
             font-size: 15px;
             color: rgb(121, 117, 117);
-        
         }
+        .k{
+            position: absolute;
+            top: 900px;
+            left: 12px;
+            width: 88%;
+        }
+        .know-us{
+            font-weight: bold;
+            color: rgb(8, 1, 43);
+            font-size: 30px;
+            font-family: arial;
+            margin-left: 100px;
+        }
+        .knowus-text{
+            position: absolute;
+            text-align: justify;
+            margin-left:100px;
+            font-family: Arial;
+            font-size: 15px;
+            color: rgb(121, 117, 117);
+            top: 55px;
+        }
+        
+        .organization{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .iimg{
+            position: absolute;
+            top: 165%;
+            left: 8%;
+            width: 37%;
+            height: 40%;
+        }
+        .organization-text{
+            position: absolute;
+            top: 165%;
+            left:50%;
+            font-family: Arial;
+            font-size: 15px;
+            color: rgb(121, 117, 117);
+         }
+         .community{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .iimg1{
+            position: absolute;
+            top: 215%;
+            left: 8%;
+            width: 37%;
+            height: 40%;
+        }
+        .community-text{
+            position: absolute;
+            top: 215%;
+            left:50%;
+            font-family: Arial;
+            font-size: 15px;
+            color: rgb(121, 117, 117);
+         }
+         .distance-learning{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .iimg2{
+            position: absolute;
+            top: 266%;
+            left: 8%;
+            width: 37%;
+            height: 40%;
+        }
+        .distance-learning-text{
+            position: absolute;
+            top: 266%;
+            left:50%;
+            font-family: Arial;
+            font-size: 15px;
+            color: rgb(121, 117, 117);
+         }
+         footer {
+            position: absolute;
+            top: 255%;
+            background-color: #333;
+            color: #fff;
+            padding: 2em 30;
+            margin-top: 30%;
+            width: 100%;
+        }
+
+        .footer-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3em;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-section a:hover {
+            color: #66ccff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
-        
-        <ul>
-            <li>About</li>
-            <li>
-                <a href="Home.html">Home</a>
-            </li>
-            <li>
-                <a href="Catalog.html">Catalog</a>
-            </li>
-            <li>
-                <a href="Resources.html">Resources</a>
-            </li>
-            <li>
-                <a href="Event.html">Event</a>
-            </li>
-            <li>
-                <a href="Contact.html">Contact</a>
-            </li>
-        </ul> 
-     </div>
-    <div class="aboutus">
-        <img src="..\Images\about us img.jpg" class="aboutus img">
-        <div class="aboutus-text">
-            <h1 class="au-text"> About Us </h1>
-            <p>Home ::before About</p>
-         </div>
-         <div class="welcome">
-            <p>Welcome</p>
+    <div class="body">
+        <header>
+            <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
+            <nav>
+                <li class="page">About</li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Catalog.html">Catalog</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </nav>
+        </header>
+
+        <div class="slideshow">
+            <img src="../Images/about-img2.jpeg" class="img">
+            <div class="slideshow-text">
+                <h1 class="ss-text" style="font-size: 230%;">About Us</h1>
+                <p style="font-size: 115%; color: black;""><a href="Home.html">Home</a> &rarr; About</p>
             </div>
+        </div>
+
+        <div class="w">
+            <div class="welcome">
+                <p>Welcome</p>
+            </div>
+
             <div class="welcome-text">
                 <p> 
                     This is the Information Technology age and at its core is Computer Science. The study of computer science is therefore critical if society is to take full advantage<br>
@@ -110,16 +275,133 @@
                 </p>
                 <p>
                     The range of courses available in the department and the skills acquired by students enable them to find employment in many diverse fields of the economy<br>
-                     and prepare our graduates for the computing industry, working in a project team (or research and development team), and to enable the graduate to bring<br>
-                      specialist skills to that team. The course also provides the platform for further study or research through exposure to established and emerging technologies<br>
-                       and methods, and to active fields of research in Computer Science.
+                    and prepare our graduates for the computing industry, working in a project team (or research and development team), and to enable the graduate to bring<br>
+                    specialist skills to that team. The course also provides the platform for further study or research through exposure to established and emerging technologies<br>
+                    and methods, and to active fields of research in Computer Science.
                 </p>
                 <p>
                     The Department offers two undergraduate degree programmes, Bachelor of Science in Computer Science Single-Major (3:2:1:1) and Major-Minor (3:2:2:1) as well<br>
-                     as Bachelor of Science in Information Technology.
-
-
+                    as Bachelor of Science in Information Technology.
                 </p>
             </div>
+        </div>
+
+        <div class="k">
+            <div class="know-us">
+                <p>Get To Know Us</p>
+            </div>
+            <div class="knowus-text">
+                <p>Things get interesting because you are eager to know more , or you become eager to know more because it is interesting?</p>
+            </div>
+        </div>
+        
+        <div class="organization">
+           <div>
+            <img src="../Images/g4.jpg" class="iimg">
+           </div> 
+           <div class="organization-text">
+            <h3 style="color: rgb(8, 1, 43)"> Our Organization</h3>
+            <p> The University of Ghana is one of the Africa's most preeminent public<br>
+                 universities. Our impact on individuals, our region and the world is profound.<br>
+                 whether we are launching young people into a boundless future or<br>
+                 confronting the grand challenges of our time through dauntless research.<br>
+                 UG educates more than 38,000students annually, with approximately 2.64%<br>
+                 being computer science students. We turn ideas into impact and transform<br>
+                 the world around us. For more about our impact, visit our news site, UG News.</p>
+
+           </div>
+        </div>
+        <div class="community">
+            <div>
+             <img src="../Images/PHOTO-2019-03-04-14-42-37.jpg" class="iimg1">
+            </div> 
+            <div class="community-text">
+             <h3 style="color: rgb(8, 1, 43)"> Our Community</h3>
+             <p> If you are inspired by a big challenge, you've come to the right place!<br>
+                 The computer science community at the univrersity of Ghana encourages it's<br>
+                 people to be vibrant and brave in taking on new challenges that push<br> 
+                 boundries beyond imagination.</p>
+ 
+            </div>
+         </div> <div class="distance-learning">
+            <div>
+             <img src="../Images/PHOTO-2019-03-04-14-45-13 2.jpg" class="iimg2">
+            </div> 
+            <div class="distance-learning-text">
+             <h3 style="color: rgb(8, 1, 43)"> Distance Learning</h3>
+             <p> Experience a UG-CDCD classroom from wherever you are. Take advantage<br>
+                 of real-time lectures and personal interaction with professors through a<br>
+                 suite of online delivery options, customizing your degree to fit your schedule.<br>
+                 Our online classroom maintains the same level of academic rigor, while<br>
+                 providing students with more ways of learning.</p>
+ 
+            </div>
+         </div>
+         <footer>
+            <div class="container">
+                <div class="footer-menu">
+                    <div class="footer-section">
+                        <h3>Academics</h3>
+                        <ul>
+                            <li><a href="#">Undergraduate Courses</a></li>
+                            <li><a href="#">Graduate Courses (MPhil Computer Science)</a></li>
+                            <li><a href="#">Graduate Courses (MSc Computer Science)</a></li>
+                            <li><a href="#">Graduate Courses (PhD)</a></li>
+                            <li><a href="#">Academic Calendar</a></li>
+                            <li><a href="#">Level 200 & 300 Timetable</a></li>
+                            <li><a href="#">Placements for Level 200 Students</a></li>
+                            <li><a href="#">Student Complaint Form</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Admissions</h3>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Graduate</a></li>
+                            <li><a href="#">International Students</a></li>
+                            <li><a href="#">Entry Requirements</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Research</h3>
+                        <ul>
+                            <li><a href="#">Research at DCS</a></li>
+                            <li><a href="#">Research Impact</a></li>
+                            <li><a href="#">Libraries</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>About The Department</h3>
+                        <ul>
+                            <li><a href="#">Introducing DCS</a></li>
+                            <li><a href="#">Head of Department's office</a></li>
+                            <li><a href="#">Faculty</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Phone & Email<br>
+                            +233 501 382 035<br>
+                            +233 559 145 698<br>
+                            <a href="mailto:dcs@ug.edu.gh">dcs@ug.edu.gh</a>
+                        </p>
+                        <p>Location<br>
+                            University Of Ghana,<br>
+                            Legon Campus<br>
+                            Opposite Mathematics<br>
+                             Department
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
+        
 </body>

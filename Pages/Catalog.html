@@ -4,49 +4,344 @@
         UG | Department of Computer Science - Catalog
     </title>
     <style>
-        .header{
+         body {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
-            margin-left: 90px;
-            margin-right: 100px;
-        }
-        .logo{
-            width: 300px;
-            height: auto;
-        }
-        ul{
-            display: flex;
-            list-style: none;
-        }
-        li{
-            margin-left: 10px;
         }
         a{
             text-decoration: none;
         }
+
+        .logo {
+            width: 300px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            margin-top: 1%;
+        }
+
+        nav li {
+            margin-left: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: 110%;
+            padding-bottom:15%;
+        }
+
+        .slideshow .img {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 250%;
+        }
+
+        .slideshow-text {
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: right;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+       .aboutus{
+            position: relative;}
+        .aboutus .img{
+            width: 1050px;
+            height: 10;
+            margin-top: 30px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .w{
+            position: absolute;
+            top: 95%;
+            left: 4.5%;
+
+        }
+        .content{
+            color:rgb(76, 72, 72);
+            font-size: 20px;
+            font-family: arial;
+            }
+        
+        
+        
+        
+        .coutse{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .iimg{
+            position: absolute;
+            top: 120%;
+            left: 10%;
+            width: 27%;
+            height: 30%;
+        }
+        .course-text{
+            position: absolute;
+            top: 120%;
+            left:40%;
+            font-family: Arial;
+            font-size: 15px;
+            color: rgb(121, 117, 117);
+         }
+         .advising{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .iimg1{
+            position: absolute;
+            top: 165%;
+            left: 40%;
+            width: 27%;
+            height: 30%;
+        }
+        .advising-text{
+            position: absolute;
+            top: 165%;
+            left:10%;
+            font-family: Arial;
+            font-size: 15px;
+            color: rgb(121, 117, 117);
+         }
+         .department-profiles{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .iimg2{
+            position: absolute;
+            top: 210%;
+            left: 10%;
+            width: 27%;
+            height: 30%;
+        }
+        .department-profiles-text{
+            position: absolute;
+            top: 210%;
+            left:40%;
+            font-family: Arial;
+            font-size: 15px;
+            color: rgb(121, 117, 117);
+         }
+         footer {
+            position: absolute;
+            top: 190%;
+            background-color: #333;
+            color: #fff;
+            padding: 2em 30;
+            margin-top: 30%;
+            width: 100%;
+        }
+
+        .footer-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3em;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-section a:hover {
+            color: #66ccff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
-        <ul>
-            <li>Catalog</li>
-            <li>
-                <a href="Home.html">Home</a>
-            </li>
-            <li>
-                <a href="About.html">About</a>
-            </li>
-            <li>
-                <a href="Resources.html">Resources</a>
-            </li>
-            <li>
-                <a href="Event.html">Event</a>
-            </li>
-            <li>
-                <a href="Contact.html">Contact</a>
-            </li>
-        </ul>
+    <div class="body">
+        <header>
+            <img src="..\Images\CS_logo.png" alt="UG Logo" class="logo">
+            <nav>
+                <li class="page">Catalog</li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Home copy.html">Home</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </nav>
+        </header>
+
+        <div class="slideshow">
+            <img src="../Images/download (2).jpg" class="img">
+            <div class="slideshow-text">
+                <h1 class="ss-text" style="font-size: 300%;">Academics</h1>
+                <p style="font-size: 115%; color: black;">
+            </div>
+        </div>
+
+        <div class="w">
+            <div class="content">
+                <p>The University of Ghana, established in 1948, is one of the oldest and largest universities in Ghana. It has played a significant role in higher education
+                     and research in the country and the West African region. The university has multiple faculties and schools offering a wide range of undergraduate and postgraduate
+                     programs across various disciplines.</p>
+            </div>
+
+            
+        </div>
+
+       
+        
+        <div class="course">
+           <div>
+            <img src="../Images/download (4).jpg" class="iimg">
+           </div> 
+           <div class="course-text">
+            <h3 style="color: rgb(8, 1, 43)"> <a href="Courses">Courses</a></h3>
+            <p>
+                Planning your schedule? Search available<br>
+                 courses in everything from aerospace studies to<br>
+                 vision science.
+            </p>
+           </div>
+        </div>
+        <div class="advising">
+            <div>
+             <img src="../Images/OIP (1).jpg" class="iimg1">
+            </div> 
+            <div class="advising-text">
+             <h3 style="color: rgb(8, 1, 43)"> <a href="Advising and Tutouring">Advising and Tutouring</a></h3>
+             <p>
+                From study strategies to planning for grad<br>
+                 school or beyond, find the resources you need<br>
+                  to succeed at University of Ghana.
+             </p>
+            </div>
+         </div>
+         </div> <div class="department-profiles">
+            <div>
+             <img src="../Images/OIP (2).jpg" class="iimg2">
+            </div> 
+            <div class="department-profiles-text">
+             <h3 style="color: rgb(8, 1, 43)"><a href="Department Profiles">Department Profiles</a></h3>
+             <p> 
+                Find faculty interests and areas of expertise in<br>
+                this searchable index.
+             </p>
+ 
+            </div>
+         </div>
+         <footer>
+            <div class="container">
+                <div class="footer-menu">
+                    <div class="footer-section">
+                        <h3>Academics</h3>
+                        <ul>
+                            <li><a href="#">Undergraduate Courses</a></li>
+                            <li><a href="#">Graduate Courses (MPhil Computer Science)</a></li>
+                            <li><a href="#">Graduate Courses (MSc Computer Science)</a></li>
+                            <li><a href="#">Graduate Courses (PhD)</a></li>
+                            <li><a href="#">Academic Calendar</a></li>
+                            <li><a href="#">Level 200 & 300 Timetable</a></li>
+                            <li><a href="#">Placements for Level 200 Students</a></li>
+                            <li><a href="#">Student Complaint Form</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Admissions</h3>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Graduate</a></li>
+                            <li><a href="#">International Students</a></li>
+                            <li><a href="#">Entry Requirements</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Research</h3>
+                        <ul>
+                            <li><a href="#">Research at DCS</a></li>
+                            <li><a href="#">Research Impact</a></li>
+                            <li><a href="#">Libraries</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>About The Department</h3>
+                        <ul>
+                            <li><a href="#">Introducing DCS</a></li>
+                            <li><a href="#">Head of Department's office</a></li>
+                            <li><a href="#">Faculty</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Phone & Email<br>
+                            +233 501 382 035<br>
+                            +233 559 145 698<br>
+                            <a href="mailto:dcs@ug.edu.gh">dcs@ug.edu.gh</a>
+                        </p>
+                        <p>Location<br>
+                            University Of Ghana,<br>
+                            Legon Campus<br>
+                            Opposite Mathematics<br>
+                             Department
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
+        
 </body>
